@@ -1,0 +1,351 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 14px;
+  background: url(../img/2.jpg) center center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  html {
+    font-size: 58px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+}
+
+/*header*/
+#header {
+  width: 100%;
+  height: 1.5rem;
+  background: rgba(53, 69, 99, 0.7);
+  padding: 0 0.3rem;
+}
+
+#header .san {
+  width: 10%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+
+#header .san .iconfont {
+  font-family: "iconfont" !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5rem;
+  display: block;
+}
+
+#header .zi {
+  color: #fff;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  float: left;
+  line-height: 1.5rem;
+}
+
+#header .add.iconfont {
+  float: right;
+  margin-right: 40px;
+  font-family: "iconfont" !important;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5rem;
+  display: block;
+}
+
+.ce {
+  display: none;
+  width: 80%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.ce .ce-top {
+  padding: 0.6rem;
+  padding-bottom: 0.2rem;
+  width: 100%;
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.ce .ce-top .photo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.ce .ce-top .photo img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  mix-width: 100%;
+  border-radius: 50%;
+}
+
+.ce .ce-top .user {
+  width: 2rem;
+  line-height: 0.8rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+.ce .ce-top .yu {
+  width: 100%;
+  line-height: 0.6rem;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.ce .menu {
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.ce .menu h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 0.2rem;
+}
+
+.ce .menu li {
+  width: 100%;
+  overflow: hidden;
+  line-height: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 16px;
+}
+
+.ce .menu li .iconfont {
+  font-family: "iconfont" !important;
+  color: #33b5e5;
+  font-size: 20px;
+  line-height: 0.6rem;
+  display: inline-block;
+  float: left;
+}
+
+.ce .menu li span {
+  color: #000;
+  float: left;
+  line-height: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.ul {
+  width: 100%;
+  padding: 0.5rem 0.4rem;
+}
+
+.ul li {
+  width: 100%;
+  background: url(../img/1.jpg);
+  opacity: 0.7;
+  height: 1.5rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.ul li .con {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+.ul li .delete.iconfont {
+  font-family: "iconfont" !important;
+  color: red;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.2rem;
+  display: none;
+}
+
+.ul li .start {
+  padding: 0 0.4rem;
+  background: #354563;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+
+.ul .done {
+  color: #333;
+  text-decoration: line-through;
+}
+
+.ul .done .delete.iconfont {
+  display: block;
+}
+
+.ul .done .start {
+  display: none;
+}
+
+.tan {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background: #f8f8f8;
+  display: none;
+}
+
+.tan .zi {
+  width: 100%;
+  height: 1.5rem;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.4rem;
+  padding-bottom: 0;
+  background: #354563;
+}
+
+.tan .zi-xia {
+  width: 100%;
+  height: 1.5rem;
+  background: #f8f8f8;
+  padding: 0.4rem;
+}
+
+.tan .zi-xia input {
+  width: 100%;
+  padding: 0.2rem;
+  color: #354563;
+  line-height: 0.6rem;
+  border: none;
+  outline: none;
+  font-size: 0.2rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid #080808;
+}
+
+.tan .add {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 0.4rem;
+  width: 80%;
+  padding: 0.2rem;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  font-size: 0.2rem;
+  line-height: 0.4rem;
+  border-radius: 15px;
+}
+
+.piao {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+}
+
+#footer {
+  width: 100%;
+  height: 1.8rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem;
+}
+
+#footer div {
+  float: left;
+  background: url(../img/1.jpg);
+  opacity: 0.9;
+  width: 33.33333%;
+  float: left;
+  color: #000;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#footer .active {
+  color: red;
+}
